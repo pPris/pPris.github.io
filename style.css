@@ -41,10 +41,6 @@ body {
     margin: 2em;
 
     /* both margins/paddings seem to distort the thumbnail aspect ratio */
-    /* margin-left: 4em;
-    margin-right: 4em; */
-    /* padding: 1em; */
-    
 }
 
 .project-item {
@@ -52,7 +48,7 @@ body {
     /* padding-bottom: 50%; */
     /* height: 200px; */
     padding: 0px 2%;
-        /* this is used to control spacing between project item but tbh a margin property would make better sense? */
+    /* this is used to control spacing between project item but tbh a margin property would make better sense? */
     
     /* using these to ensure the project-item container height stretches to fit both the thumbnail and the caption */
     display: flex;
@@ -97,10 +93,6 @@ body {
     font-size: 16px;   
     text-transform: lowercase;
 }
-
-/* .caption p:not(.proj-title) {
-    font-family: 'Open Sans', sans-serif;
-} */
 
 .section-header {
     text-align: center;
@@ -163,17 +155,6 @@ body {
     margin-bottom: 17px;
 }
 
-#profile-pic {
-    /* display: table-cell; */
-    /* height: 100%; */
-    /* max-width: 5em; */
-}
-
-#profile-pic-holder {
-    /* border: solid */
-    
-}
-
 /* for testing */
 button {
     z-index: 1;
@@ -225,11 +206,6 @@ p {
     font-size: 18px;
 }
 
-
-
-
-/* TODO: WRAPPING EACH SECTION IN DIV */
-
 .accent-background {
     background-color: var(--accent1);
     /* color: white; */
@@ -244,10 +220,15 @@ p {
     margin-bottom: 10px;
 }
 
-
-
-
-
 .divider {
     text-align: center;
 }
+
+.center {
+    text-align: center;
+}
+
+.more-details {
+    padding: 2em;
+}
+
