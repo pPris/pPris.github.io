@@ -3,6 +3,7 @@ html {
   --accent1: #25c5ff;
   --accent1_o: #00bbff60;
   --accent2: #c7acb8;
+  --a1comp: #674fff70;
 }
 
 body {
@@ -13,6 +14,11 @@ body {
   flex-direction: column;
 
   font-size: larger;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, .subtitle, .proj-title {
+  font-family: monospace;
 }
 
 #welcome-section {
@@ -27,6 +33,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.row {
+  margin: 10px;
 }
 
 #welcome-section h1,
@@ -87,9 +97,7 @@ body {
 
 .proj-title {
   font-weight: bold;
-  font-size: 16px;
-    font-size: 16px;   
-  font-size: 16px;
+  font-size: 19px;
   text-transform: lowercase;
 }
 
@@ -204,10 +212,6 @@ p {
   font-size: 16px;
 }
 
-.proj-title {
-  font-size: 18px;
-}
-
 .accent-background {
   background-color: var(--accent1);
   /* color: white; */
@@ -215,6 +219,10 @@ p {
 
 .accent-background-translucent {
   background-color: var(--accent1_o);
+}
+
+.complement {
+  background-color: var(--a1comp);
 }
 
 .has-subtitle {
@@ -227,6 +235,7 @@ p {
 
 .center {
   text-align: center;
+  margin: 30px;
 }
 
 .more-details {
@@ -260,18 +269,28 @@ p {
     45deg,
     white       0px,
     white       20px,
-    #b0efffbb   20px,
-    rgb(176, 217, 255, 0.4) 40px,
+    #c3f3ffbb   20px,
+    rgba(203, 230, 255, 0.4) 40px,
     white                   40px,
     white                   60px,
-    rgb(176, 217, 255, 0.4) 60px,
-    rgb(176, 217, 255, 0.4) 80px
+    rgba(193, 225, 255, 0.5) 60px,
+    rgba(184, 220, 255, 0.4) 80px
   );
 
-  font-weight: bold;
+  /* font-weight: 100; */
 }
 
-@media only screen and (max-width: 768px) {
+#skills-section h4 {
+  font-weight: 900;
+}
+
+#skills-section li {
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 992px) {
     /* For mobile phones: */
     .skills-column {
         margin: 10px;
