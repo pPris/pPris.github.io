@@ -107,6 +107,7 @@ h1, h2, h3, .subtitle, .proj-title {
   padding: 0;
   /* margin-top: 2em; */
   font-weight: bolder;
+  text-transform: lowercase;
 }
 
 .section {
