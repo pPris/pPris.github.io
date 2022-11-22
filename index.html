@@ -1,5 +1,4 @@
 <head>
-
     <!-- default code from bootstrap guide -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- helps with mobile responsivity + -->
@@ -10,7 +9,6 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
@@ -27,8 +25,9 @@
             <!-- <span class="animate-stuff">_</span> -->
         </h1>
         <h3>i like making visual things and productivity tools</h3>
+        <h3 id="down-caret"><a href="#about-me-section">⮟</a></h3>
     </div>
-    <div id="about-me-section" class="section ">
+    <div id="about-me-section" class="section">
         <h3 class="section-header">a little about me</h3>
         <div id="about-me" class="">
             <div id="profile-pic-holder">
@@ -38,40 +37,50 @@
                 <p><strong>My programming story starts with excel trackers and game simulators.</strong> What started as
                     creating excel and VBA applications led me to decide that I want to build even more types of tech
                     applications, so I'm now working on programming. </p>
-                <p><strong>I'm a Year 3 Computer Science undergraduate</strong> and I love creating visual projects like websites. I also love to create tools for improving productivity, like timers that use the pomodoro
-                    technique, and tools that help you track self-improvement. Below you'll find some of my
-                    works-in-progress.</p>
+                <p><strong>I'm a Final Year Computer Science Undergraduate</strong> (graduating June 2023) and I love creating visual projects like websites. I also love to create tools for improving productivity, like timers that use the pomodoro
+                    technique, and tools that help you track self-improvement. </p> 
+                <p>I have experience in frontend and backend, even a little in DevOps. Below are some of my skills and
+                works-in-progress.</p>
             </div>
         </div>
     </div>
     <!-- <p class="divider">------</p> -->
-    <div id="skills-section" class="section">
+    <div id="skills-section" class="section gradient-bg">
         <h3 class="section-header">technical skills</h3>
-        
+        <p class="about-me-text text-center">Here are some of the skills I have picked up on my own time, and on the fly during projects and internship.</p>
         <div id="projects" class="body-sections">
-            <div id="left-column" class="skills-column col-md-4 col-xs-12">
-                <h4>Back-End Skills</h4>
-                <li>NodeJs, Express</li>
-                <li>Mongoose</li>
-                <li>Also known as MERN stack</li>
-            </div>
-            <div id="middle-column" class="skills-column col-md-4 col-xs-12">
-                <h4>Front-End Skills</h4>
-                <li>ReactJs</li>
-                <li>Bootstrap</li>
-                <li>Javascript, HTML, CSS</li>
-            </div>
-            <div class="skills-column short-column-li col-md-4 col-xs-12">
+            <div class="skills-column short-column-li col-md-3 col-xs-12">
                 <h4>Programming Languages</h3>
                 <li>Java</li>
                 <li>Javascript</li>
                 <li>Python</li>
-                <!-- <li>C</li> -->
+            </div>
+            <div class="skills-column col-md-3 col-xs-12">
+                <h4>Backend Skills</h4>
+                <li>Flask Python</li>
+                <li>NoSQL (MongoDB) </li>
+                <li>SQL (PostgreSQL)</li>
+                <li>NodeJs, Express (MERN Stack)</li>
+            </div>
+            <div class="skills-column col-md-3 col-xs-12">
+                <h4>Frontend Skills</h4>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Javascript, HTML, CSS</li>
+                    <li>ReactJs</li>
+                </ul>
+            </div>
+            <div class="skills-column col-md-3 col-xs-12">
+                <h4>Miscellaneous</h4>
+                <ul>
+                    <li>Basic Linux (Bash) Experience</li>
+                    <li>AWS EC2, AWS Lambda</li>                    
+                    <li>Git, Agile, CI/CD, APIs</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- <p class="divider">------</p> -->
-    <div id="project-section" class="section">
+    <div id="project-section" class="section offwhite-bg">
         <h3 id="my-projects" class="section-header">my projects</h3>
         <div id="projects" class="body-sections">
             <div class=row>
@@ -109,7 +118,7 @@
                         <img src="logos/react.svg">
                     </div>
                 </div>
-                <div id="item1"  class="project-item col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <div id="item3"  class="project-item col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
                     <div class="thumbnail">
                         <a href="https://github.com/pPris/ip/tree/master/docs" target="_blank">
                             <img src="thumbnail_3_4/ip-ui.png" alt="java task manager thumbnail">
@@ -125,7 +134,7 @@
                 </div>
             </div>
             <div class="row">
-                <div id="item1"  class="project-item col-md-4 col-md-offset-2 col-xs-8 col-xs-offset-2">
+                <div id="item4"  class="project-item col-md-4 col-md-offset-2 col-xs-8 col-xs-offset-2">
                     <div class="thumbnail">
                         <a href="https://ay2021s2-cs2103t-t11-4.github.io/tp/" target="_blank">
                             <img src="thumbnail_3_4/tp-ui.png" alt="java cakecollate thumbnail">
@@ -139,7 +148,7 @@
                         <img src="logos/java-longer-logo.png">
                     </div>
                 </div>
-                <div id="item1" class="project-item col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
+                <div id="item5" class="project-item col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-0">
                     <div class="thumbnail">
                         <a href="#my-projects">
                             <img src="thumbnail_3_4/portfolio-aspect-3-4.png" alt="portfolio website thumbnail">
@@ -161,15 +170,14 @@
         </div>
     </div>
     <div class="more-details complement">
-        <!-- ideally this div should be part of the projects div -->
-        <!-- <p class="center subtitle">View more projects <a href="https://github.com/pPris" alt="link to github projects">on my github pinned projects section</a></p> -->
         <h3 class="section-header">open-sourced contributions</h3>
-        <p class="center subtitle">I have also contributed to the open-sourced repo, TEAMMATES. <a href="https://github.com/pPris?tab=overview&from=2021-08-01&to=2021-08-30&org=TEAMMATES#js-contribution-activity" alt="link to github profile for teammates activity">Here's a list of my merged and ongoing PRs</a> on my github profile.</p>
+        <p class="center subtitle mx-5">I have also contributed 4 Pull Requests (3 merged) to the open-sourced repo, TEAMMATES. <a href="https://github.com/pPris?tab=overview&from=2021-08-01&to=2021-08-30&org=TEAMMATES#js-contribution-activity" alt="link to github profile for teammates activity"><br>Here's a list of my merged and ongoing PRs</a> on my github profile.</p>
     </div>
     <div id="footer" class="section accent-background-translucent">
         <h3 class="section-header has-subtitle">contact me!</h3>
         <p class="subtitle">i would love to hear from you</p>
         <p><a href="https://github.com/pPris" target="_blank"><img src="logos/github.png" alt="github icon"></a>
         <p><a href="#welcome-section">scroll to top</a></p>
+        <!-- <p>(Personal information not published for safety purposes. You might have my resume in which I would have listed some ways of contacting me :)</p> -->
     </div>
 </body>

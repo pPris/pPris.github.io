@@ -26,13 +26,13 @@ h1, h2, h3, .subtitle, .proj-title {
   background-repeat: no-repeat;
   background-size: cover;
 
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .row {
@@ -111,7 +111,7 @@ h1, h2, h3, .subtitle, .proj-title {
 }
 
 .section {
-  padding: 2em 0em;
+  padding: 2.5em 0em 4em;
 }
 
 @keyframes fadeinout {
@@ -121,7 +121,6 @@ h1, h2, h3, .subtitle, .proj-title {
   50% {
     opacity: 0;
   }
-  /* 75% { opacity: 1; } */
   100% {
     opacity: 1;
   }
@@ -138,9 +137,7 @@ h1, h2, h3, .subtitle, .proj-title {
 
 .tech-used {
   text-align: center;
-  /* position: absolute; */
   bottom: 0;
-  /* height: 1em; */
   padding: 0.5em;
 }
 
@@ -170,11 +167,12 @@ h1, h2, h3, .subtitle, .proj-title {
 }
 
 /* for testing */
+/* 
 button {
   z-index: 1;
 }
 
-/* .thumbnail button {
+.thumbnail button {
     transition: 0.1s;
 
     position: absolute;
@@ -244,45 +242,33 @@ p {
 }
 
 .skills-column h4 {
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* temporary until you use buttons or other cool stuff */
 .skills-column li {
-  text-align: center;
+  /* text-align: center; */
 }
 
-/* 
-#middle-column {
-    text-align: center;
+.gradient-bg {
+  background: rgb(205,228,255);
+  background: linear-gradient(90deg, rgba(205,228,255,1) 0%, rgba(230,207,254,1) 100%);
 }
 
-#left-column li {
-    margin: 0em 4em;
+.offwhite-bg {
+  background: rgb(252, 251, 251);
 }
-
-.short-column-li li {
-    margin: 0em 9em;
-} */
 
 #skills-section {
-  background: repeating-linear-gradient(
-    45deg,
-    white       0px,
-    white       20px,
-    #c3f3ffbb   20px,
-    rgba(203, 230, 255, 0.4) 40px,
-    white                   40px,
-    white                   60px,
-    rgba(193, 225, 255, 0.5) 60px,
-    rgba(184, 220, 255, 0.4) 80px
-  );
 
-  /* font-weight: 100; */
 }
 
 #skills-section h4 {
   font-weight: 900;
+  border-bottom: solid;
+  padding-bottom: 1rem;
+  font-family: monospace;
+  text-transform: lowercase;
 }
 
 #skills-section li {
@@ -292,8 +278,28 @@ p {
 }
 
 @media only screen and (max-width: 992px) {
-    /* For mobile phones: */
     .skills-column {
         margin: 10px;
     }
   }
+
+
+#down-caret a:link {
+  color: white;
+}
+
+#down-caret a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#down-caret a:hover {
+  color: #fff4;
+  text-decoration: none;
+  -webkit-text-stroke: 1px white;
+}
+
+#down-caret a:active {
+  color: rgb(180, 202, 255);
+  text-decoration: none;
+} 
